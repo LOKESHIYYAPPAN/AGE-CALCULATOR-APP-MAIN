@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form id="form">
+      <div class="day">
+        <label for="day">DAY</label>
+        <input type="text" name="day" id="day" required>
+        <div class="def">Must be a valid day</div>
+        <div class="emptyTxt">This field is required</div>
+
+      </div>
+      <div class="month">
+        <label for="month">MONTH</label>
+        <input type="text" name="month" id="month" required>
+        <div class="def">Must be a valid month</div>
+        <div class="emptyTxt">This field is required</div>
+        
+      </div>
+      <div class="year">
+        <label for="year">YEAR</label>
+        <input type="text" name="year" id="year" required>
+        <div class="def">Must be a valid year</div>
+        <div class="emptyTxt">This field is required</div>
+        <div class="validYear">Must be in the past</div>
+      </div>
+      <button type="submit" id="btn" title="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+      </button>
+    </form>
+    <div class="res">
+      <h2 class="y"><span id="y" class="num">- -</span> years</h2>
+      <h2 class="m"><span id="m" class="num">- -</span> months</h2>
+      <h2 class="d"><span id="d" class="num">- -</span> days</h2>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lokesh I</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
